@@ -1,7 +1,200 @@
 <html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <div class="red">RED</div>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="intro">
+            <h1>Welcome to the Design System</h1>
+            <p>This is a simple design system built with HTML and CSS.</p>
+            <button class="btn-primary">Get Started</button>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards">
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>This is a description of the card.</p>
+                <button class="btn-secondary">Read More</button>
+            </div>
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>This is a description of the card.</p>
+                <button class="btn-secondary">Read More</button>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <form action="#">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section id="colors">
+            <h2>Color Palette</h2>
+            
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #007BFF;"></div>
+                <p><strong>Primary Blue</strong></p>
+                <p>Hex: #007BFF</p>
+                <p>RGB: rgb(0, 123, 255)</p>
+                <p>HSL: hsl(210, 100%, 50%)</p>
+                <p>This is the primary color used for buttons, links, and active elements. It’s bright and eye-catching.</p>
+            </div>
+        
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #28A745;"></div>
+                <p><strong>Success Green</strong></p>
+                <p>Hex: #28A745</p>
+                <p>RGB: rgb(40, 167, 69)</p>
+                <p>HSL: hsl(134, 61%, 41%)</p>
+                <p>This color is used for success messages, confirmation buttons, and indicators.</p>
+            </div>
+        
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #DC3545;"></div>
+                <p><strong>Danger Red</strong></p>
+                <p>Hex: #DC3545</p>
+                <p>RGB: rgb(220, 53, 69)</p>
+                <p>HSL: hsl(348, 83%, 47%)</p>
+                <p>This color is used for error messages and warning buttons.</p>
+            </div>
+        
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #6C757D;"></div>
+                <p><strong>Neutral Gray</strong></p>
+                <p>Hex: #6C757D</p>
+                <p>RGB: rgb(108, 117, 125)</p>
+                <p>HSL: hsl(210, 10%, 48%)</p>
+                <p>This neutral gray is used for text, borders, and secondary elements.</p>
+            </div>
+            
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #F8F9FA;"></div>
+                <p><strong>Light Background</strong></p>
+                <p>Hex: #F8F9FA</p>
+                <p>RGB: rgb(248, 249, 250)</p>
+                <p>HSL: hsl(210, 30%, 98%)</p>
+                <p>This color is used for light backgrounds, card elements, and section dividers.</p>
+            </div>
+        </section>
+    
+        <section id="fonts">
+            <h2>Fonts</h2>
+            
+            <!-- Font: Open Sans -->
+            <div class="font-family">
+                <h3>Open Sans</h3>
+                <p style="font-family: 'Open Sans', sans-serif; font-weight: normal; font-size: 16px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Open Sans', sans-serif; font-style: italic; font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: italic; font-size: 16px;">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+        
+            <!-- Font: Roboto -->
+            <div class="font-family">
+                <h3>Roboto</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-weight: normal; font-size: 16px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Roboto', sans-serif; font-style: italic; font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+                <p style="font-family: 'Roboto', sans-serif; font-weight: normal; font-style: italic; font-size: 16px;">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+        </section>
+        
+        <section id="text-styles">
+            <h2>Text Styles</h2>
+        
+            <!-- Heading 1 (h1) -->
+            <div class="text-style">
+                <h3>Heading 1 (h1)</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 2.5rem; font-weight: bold; color: #333;">Main heading style for large titles and page sections.</p>
+            </div>
+        
+            <!-- Heading 2 (h2) -->
+            <div class="text-style">
+                <h3>Heading 2 (h2)</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 2rem; font-weight: bold; color: #333;">Subheading for important sections.</p>
+            </div>
+        
+            <!-- Paragraph (p) -->
+            <div class="text-style">
+                <h3>Paragraph (p)</h3>
+                <p style="font-family: 'Open Sans', sans-serif; font-size: 1rem; line-height: 1.6; color: #555;">This is the body text style for paragraphs. It uses Open Sans for readability, with a comfortable line height for better legibility.</p>
+            </div>
+        
+            <!-- Link (a) -->
+            <div class="text-style">
+                <h3>Link (a)</h3>
+                <p><a href="#" style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #007BFF; text-decoration: none;">This is a link styled using the primary color.</a></p>
+            </div>
+        </section>
+    
+        <section id="layout">
+            <h2>Layout & Design</h2>
+            
+            <!-- Grid Layout -->
+            <div class="layout-box">
+                <h3>Grid Layout</h3>
+                <p>This layout uses Flexbox to evenly distribute elements. The card elements are arranged in a flexible grid for responsiveness.</p>
+            </div>
+        
+            <div class="grid-example" style="display: flex; justify-content: space-between; padding: 20px;">
+                <div class="card" style="flex: 1; background-color: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <h4>Card 1</h4>
+                    <p>This is an example of a card layout.</p>
+                </div>
+                <div class="card" style="flex: 1; background-color: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <h4>Card 2</h4>
+                    <p>This is an example of a card layout.</p>
+                </div>
+                <div class="card" style="flex: 1; background-color: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <h4>Card 3</h4>
+                    <p>This is an example of a card layout.</p>
+                </div>
+            </div>
+        
+            <!-- Box Model -->
+            <div class="box-example">
+                <h3>Box Model</h3>
+                <p>The box model is essential for controlling the spacing between elements. We define margins, padding, and borders carefully.</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+
+
+    
 </body>
 
 </html>
