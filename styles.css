@@ -1,0 +1,287 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 0 20px; /* Add horizontal padding to main content */
+}
+
+#colors h2 {
+    margin-bottom: 20px; /* Add space between the title and the swatches */
+}
+
+#colors {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the color grid container */
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with flexible column sizes */
+    gap: 20px;
+    width: 100%; /* Ensure grid spans full width */
+    max-width: 1200px; /* Optional: Max width to prevent overly stretched grid */
+    justify-items: center; /* Center the content within each grid item */
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.color-swatch {
+    width: 100%;
+    max-width: 120px; /* Limit the swatch size */
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#fonts {
+    margin-top: 40px;
+    padding: 40px 20px; /* Add padding to the section */
+    background-color: #fff; /* Optional: Background for better readability */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+.font-family {
+    margin-bottom: 20px;
+}
+
+
+.font-family h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+/* Text Styles Section */
+#text-styles {
+    margin-top: 40px;
+    padding: 40px 20px; /* Add padding to the section */
+    background-color: #fff; /* Optional: Background for better readability */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+.text-style {
+    margin-bottom: 40px; /* space between each text style */
+}
+
+.text-style h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+/* Layout Section */
+#layout {
+    margin-top: 40px;
+    padding: 40px 20px; /* Add padding to the section */
+    background-color: #fff; /* Optional: Background for better readability */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+.layout-box, .grid-example, .box-example {
+    margin-bottom: 40px; /* Add margin for spacing between layout examples */
+}
+
+/* Box Model Example */
+.box-example {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Centering and Responsive Layout for Text and Sections */
+h1, h2, h3 {
+    text-align: center; /* Center text for all headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+p {
+    text-align: center; /* Center text for paragraphs */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+button {
+    display: block; /* Ensure buttons take full width of their container */
+    margin: 0 auto; /* Center buttons horizontally */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background-color: #888;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+/* Section Styles */
+.intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Cards Section (Optional for cards) */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.form-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.form-section input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
